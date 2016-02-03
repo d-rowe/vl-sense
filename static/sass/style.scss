@@ -1,0 +1,161 @@
+$bodycolor: #2E343D;
+$toolbarcolor: #C8A889;
+$toolbarbuttoncolor: #C8A889;
+$accidentalpressed: #C76538;
+$keynumeralcolor: #EBE4CC;
+$scorecolor: #EBE4CC;
+
+$shadowdivider: 3;
+
+$shadowsize: 5px;
+
+
+body {
+  background-color: $bodycolor;
+}
+
+#scorediv {
+  height: 18em;
+}
+
+#keyrns {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+#key {
+  width: 2.8em;
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position: relative;
+  /*left: -10px;*/
+  background-color: $keynumeralcolor;
+  text-align: center;
+  border: none;
+  // border-radius: 5px;
+
+  // -moz-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  // -webkit-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  // box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+}
+
+
+.numeral {
+  //left: 15px;
+  width: 50px;
+  background-color: $keynumeralcolor;
+  font-size: 16px;
+  padding: 2px;
+  text-align: center;
+  border: none;
+  position: absolute;
+  border-bottom: 1px solid grey;
+  // border-radius: 5px;
+
+  // -moz-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  // -webkit-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  // box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+}
+.numeral:hover {
+  border-bottom: 2px solid grey;
+}
+.numeral:focus {
+  border-bottom: 2px solid black;
+}
+
+.accbutton {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+
+  -moz-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  -webkit-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+
+  // margin: 5px;
+  border: none;
+  height: 24px;
+  // border-radius: 2px;
+  background-color: $toolbarbuttoncolor;
+}
+
+.accpressed {
+  background-color: $bodycolor;
+  color: white;
+
+    -moz-box-shadow: 0 0 $shadowsize/$shadowdivider $bodycolor;
+  -webkit-box-shadow: 0 0 $shadowsize/$shadowdivider $bodycolor;
+  box-shadow: 0 0 $shadowsize/$shadowdivider $bodycolor;
+}
+
+#natural {
+  margin-left: 90px;
+}
+
+#play {
+  margin-left: 150px;
+  border: none;
+  // border-radius: 5px;
+  background-color: $toolbarbuttoncolor;
+  height: 24px;
+
+  -moz-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  -webkit-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+}
+
+#restart {
+  border: none;
+  margin: 5px;
+  // border-radius: 5px;
+  background-color: $toolbarbuttoncolor;
+  height: 24px;
+
+  -moz-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  -webkit-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+}
+
+#check {
+  border: none;
+  margin: 5px;
+  // border-radius: 5px;
+  background-color: $toolbarbuttoncolor;
+  height: 24px;
+
+  -moz-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  -webkit-box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+  box-shadow: 0 0 $shadowsize/$shadowdivider #000000;
+}
+
+#bpmlabel {
+  height: 24px;
+}
+
+#fulldiv {
+  background-color: $scorecolor;
+
+  -moz-box-shadow: 0 0 $shadowsize*2 #000000;
+  -webkit-box-shadow: 0 0 $shadowsize*2 #000000;
+  box-shadow: 0 0 $shadowsize*2 #000000;
+}
+
+#toolbar {
+  background-color: $toolbarcolor;
+  -moz-box-shadow: 0 0 $shadowsize #000000;
+  -webkit-box-shadow: 0 0 $shadowsize #000000;
+  box-shadow: 0 0 $shadowsize #000000;
+}
+
+
+footer {
+  text-align: center;
+  color: $scorecolor;
+  position: absolute;
+  top: 90%;
+  width: 95%;
+}

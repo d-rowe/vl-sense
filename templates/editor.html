@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>VLSense by Daniel Rowe</title>
+  
+  <!-- vendor -->
+  <script src="{{ url_for('static', filename='build/js/vendor.js') }}"></script>
+
+  <!-- Libs -->
+  <script src="{{ url_for('static', filename='build/js/scripts.js') }}"></script>
+
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+  <!-- Set Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <!-- <h2 id='title'>VLSense</h2> -->
+    <div id='fulldiv'>
+      <div id='toolbar'>
+        <button id='natural' class='accbutton'>♮</button>
+        <button id='sharp' class='accbutton'>♯</button>
+        <button id='flat' class='accbutton'>♭</button>
+  
+        <!-- <a id='bpmlabel'>BPM</a>
+        <input id='tempo' type="number" min="35" max="400" step="1" value="60" /> -->
+
+        <button id='play'>Listen</button>
+        <button id='restart'>Restart</button>
+        <button id='check'>Export JSON</button>
+      </div>
+      <!-- Div for score -->
+      <div id='scorediv'></div>
+      <!-- Div for key and roman numerals -->
+        <div id='keyrns'>
+          <input type="text" placeholder="Key" id="key" maxlength="4"></input>
+        </div>
+      </div>
+</body>
+
+<footer>
+  <p>&copy; Daniel Rowe 2015</p>
+</footer>
+</html>

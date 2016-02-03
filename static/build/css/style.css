@@ -1,0 +1,111 @@
+body {
+  background-color: #2E343D; }
+
+#scorediv {
+  height: 18em; }
+
+#keyrns {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: inline-block; }
+
+#key {
+  width: 2.8em;
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position: relative;
+  /*left: -10px;*/
+  background-color: #EBE4CC;
+  text-align: center;
+  border: none; }
+
+.numeral {
+  width: 50px;
+  background-color: #EBE4CC;
+  font-size: 16px;
+  padding: 2px;
+  text-align: center;
+  border: none;
+  position: absolute;
+  border-bottom: 1px solid grey; }
+
+.numeral:hover {
+  border-bottom: 2px solid grey; }
+
+.numeral:focus {
+  border-bottom: 2px solid black; }
+
+.accbutton {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -moz-box-shadow: 0 0 1.66667px #000000;
+  -webkit-box-shadow: 0 0 1.66667px #000000;
+  box-shadow: 0 0 1.66667px #000000;
+  border: none;
+  height: 24px;
+  background-color: #C8A889; }
+
+.accpressed {
+  background-color: #2E343D;
+  color: white;
+  -moz-box-shadow: 0 0 1.66667px #2E343D;
+  -webkit-box-shadow: 0 0 1.66667px #2E343D;
+  box-shadow: 0 0 1.66667px #2E343D; }
+
+#natural {
+  margin-left: 90px; }
+
+#play {
+  margin-left: 150px;
+  border: none;
+  background-color: #C8A889;
+  height: 24px;
+  -moz-box-shadow: 0 0 1.66667px #000000;
+  -webkit-box-shadow: 0 0 1.66667px #000000;
+  box-shadow: 0 0 1.66667px #000000; }
+
+#restart {
+  border: none;
+  margin: 5px;
+  background-color: #C8A889;
+  height: 24px;
+  -moz-box-shadow: 0 0 1.66667px #000000;
+  -webkit-box-shadow: 0 0 1.66667px #000000;
+  box-shadow: 0 0 1.66667px #000000; }
+
+#check {
+  border: none;
+  margin: 5px;
+  background-color: #C8A889;
+  height: 24px;
+  -moz-box-shadow: 0 0 1.66667px #000000;
+  -webkit-box-shadow: 0 0 1.66667px #000000;
+  box-shadow: 0 0 1.66667px #000000; }
+
+#bpmlabel {
+  height: 24px; }
+
+#fulldiv {
+  background-color: #EBE4CC;
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #000000; }
+
+#toolbar {
+  background-color: #C8A889;
+  -moz-box-shadow: 0 0 5px #000000;
+  -webkit-box-shadow: 0 0 5px #000000;
+  box-shadow: 0 0 5px #000000; }
+
+footer {
+  text-align: center;
+  color: #EBE4CC;
+  position: absolute;
+  top: 90%;
+  width: 95%; }
+
+/*# sourceMappingURL=style.css.map */
