@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 		var request = {
-            url: "http://localhost:8000/api",
+            url: "http://127.0.0.1:8000/api",
             crossDomain: true,
             type: 'PUT',
             contentType: "application/json",
