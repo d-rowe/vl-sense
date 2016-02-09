@@ -6,14 +6,13 @@ $(document).ready(function() {
 
 		var out = {
 			'key': score.key, 
-			'numerals': numerals, 
-			'notenames': notenames
+			'numerals': [numerals], 
+			'notenames': [notenames]
 		};
 
-
-
 		var request = {
-            url: "http://127.0.0.1:8000/api",
+			// Relpace with domain name when aquired
+            url: "http://localhost:8000/api",
             crossDomain: true,
             type: 'PUT',
             contentType: "application/json",
@@ -26,9 +25,6 @@ $(document).ready(function() {
         $.ajax(request).done(function (data, textStatus, jqXHR) {
     		console.log({'request': out, 'response': data});
     	});
-
-
-
 
 		function getNoteNames() {
 	    	var notenames = [];

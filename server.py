@@ -12,14 +12,14 @@ api = Api(app)
 
 parser = reqparse.RequestParser()
 parser.add_argument('key')
-parser.add_argument('notenames')
-parser.add_argument('numerals')
+parser.add_argument('notenames', type = list)
+parser.add_argument('numerals', type = list)
 
 class VLSense(Resource):
 
 	def put(self):
 		request = parser.parse_args()
-		convert.convert(request)
+		print(convert.convert(request))
 		return request
 
 
