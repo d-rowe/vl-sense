@@ -1,6 +1,6 @@
 from flask import Flask, render_template, abort
 from flask_restful import reqparse, Api, Resource
-from libs import convert
+from libs import convert, geterrors
 
 app = Flask(__name__)
 
@@ -19,7 +19,8 @@ class VLSense(Resource):
 
 	def put(self):
 		request = parser.parse_args()
-		print(convert.convert(request))
+		songData = convert.convert(request)
+		print(geterrors(songData))
 		return request
 
 

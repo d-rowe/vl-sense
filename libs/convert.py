@@ -6,21 +6,43 @@ def convert(json):
 	dkey = key.Key(skey.replace('b', '-'))
 	numerals = json['numerals']
 	dchords = getChords(json)
+	chords = dchords # Dumb, get ride of chords
 
+	rns = []
+	for numeral in numerals:
+		crn = roman.RomanNumeral(numeral, dkey)
+		rns.append(crn)
+
+	figures = []
+	for i in rns:
+		figures.append(i.figure)
+
+
+	bass, tenor, alto, soprano = [], [], [], []
+	for x in range(len(dchords)):
+		for y in range(len(dchords[x])):
+			if y == 0:
+				bass.append(dchords[x][y])
+			elif y == 1:
+				tenor.append(dchords[x][y])
+			elif y == 2:
+				alto.append(dchords[x][y])
+			elif y == 3:
+				soprano.append(dchords[x][y])
 
 	return {
         'key': dkey,
         'skey': skey,
-        # 'chords': chords,
+        'chords': chords,
         'dchords': dchords,
-        # 'romans': rns,
-        # 'figures': figures,
-        # 'voices': {
-            # 'bass': bass,
-            # 'tenor': tenor,
-            # 'alto': alto,
-            # 'soprano': soprano
-        # },
+        'romans': rns,
+        'figures': figures,
+        'voices': {
+            'bass': bass,
+            'tenor': tenor,
+            'alto': alto,
+            'soprano': soprano
+        },
         # 'data': insong
     }
 
