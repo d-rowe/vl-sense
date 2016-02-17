@@ -20,8 +20,9 @@ class VLSense(Resource):
 	def put(self):
 		request = parser.parse_args()
 		songData = convert.convert(request)
-		print(geterrors(songData))
-		return request
+		errors = geterrors(songData)
+		print(errors)
+		return str(errors)
 
 
 api.add_resource(VLSense, '/api')
