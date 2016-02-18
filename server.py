@@ -1,4 +1,4 @@
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, jsonify
 from flask_restful import reqparse, Api, Resource
 from libs import convert, geterrors
 
@@ -22,7 +22,7 @@ class VLSense(Resource):
 		songData = convert.convert(request)
 		errors = geterrors(songData)
 		print(errors)
-		return str(errors)
+		return jsonify(**errors)
 
 
 api.add_resource(VLSense, '/api')

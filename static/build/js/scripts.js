@@ -982,7 +982,6 @@ $(document).ready(function() {
 
         $.ajax(request).done(function (data, textStatus, jqXHR) {
     		console.log({'request': out, 'response': data});
-    		window.alert(data);
     	});
 
 		function getNoteNames() {

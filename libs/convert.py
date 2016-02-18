@@ -1,3 +1,10 @@
+###################################
+# libs/convert.py
+#   Parse and analyse json score
+#
+# Copyright 2015 Daniel Rowe
+###################################
+
 from music21 import pitch, chord, stream, key, roman
 from libs import *
 

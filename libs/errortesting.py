@@ -12,7 +12,7 @@ from errorlibs import *
 
 
 def geterrors(songdata):
-    return {
+    errors = {
         'Voice Ranges': checkranges(songdata),
         'Tendency Tones': checktendencies(songdata),
         'Intervals': checkintervals(songdata),
@@ -21,3 +21,10 @@ def geterrors(songdata):
         #'Retrogressions': checkretrogressions(songdata),
         # 'Inversions': checkinversions(songdata)
     }
+
+    out = {}
+    for key in errors.keys():
+    	if errors[key] != []:
+    		out[key] = errors[key]
+
+    return out
