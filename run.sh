@@ -1,3 +1,3 @@
-python server.py &
+python app &
 cd static
 grunt &
