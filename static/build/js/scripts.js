@@ -49,7 +49,7 @@ $(function() {
 	    if ((mouse.x > -1) && (mouse.x < score.idLength)) {
 		    mouse.y = Math.round(mouse.y / (5 * score.zoom));
 		    mouse.x = (mouse.x * score.notegap) + score.start_x + 23;
-		    mouse.y += 46;
+		    mouse.y += 40;
 		    mouse.y *= (5 * score.zoom);
 
 		    createHoverNote(mouse.x, mouse.y);
@@ -524,8 +524,8 @@ function yToNote(y) {
 // TODO clean
 
     // Set relative pos based on stave
-    var trebleoffset = 4;
-    var bassoffset = 3;
+    var trebleoffset = -2;
+    var bassoffset = -3;
 
     if (y > 23) {
         var clef = 'treble';

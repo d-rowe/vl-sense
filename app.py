@@ -45,7 +45,7 @@ def after_request(response):
 
 @app.route('/')
 def mainpage():
-    return "Welcome to MuseEddy"
+    return render_template('index.html')
 
 
 @app.route('/editor')

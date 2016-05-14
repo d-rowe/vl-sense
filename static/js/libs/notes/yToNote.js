@@ -2,8 +2,8 @@ function yToNote(y) {
 // TODO clean
 
     // Set relative pos based on stave
-    var trebleoffset = 4;
-    var bassoffset = 3;
+    var trebleoffset = -2;
+    var bassoffset = -3;
 
     if (y > 23) {
         var clef = 'treble';
