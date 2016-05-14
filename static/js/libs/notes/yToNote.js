@@ -5,7 +5,7 @@ function yToNote(y) {
     var trebleoffset = -2;
     var bassoffset = -3;
 
-    if (y > 23) {
+    if (y > 15) {
         var clef = 'treble';
         var relativey = y - trebleoffset;
     } else {
