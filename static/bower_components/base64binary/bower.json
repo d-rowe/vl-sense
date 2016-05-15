@@ -1,0 +1,18 @@
+{
+  "name": "base64binary",
+  "description": "UMD-wrapped version of Daniel Guerrero's Base64Binary object available at https://github.com/danguer/blog-examples/blob/master/js/base64-binary.js",
+  "main": "base64binary.js",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "license": "LICENSE.md",
+  "authors": [
+    "Daniel Guerrero (http://www.danguer.com)",
+    "Stanislas Ormières (http://github.com/laruiss)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/laruiss/base64binary"
+  }
+}
