@@ -1,0 +1,23 @@
+{
+  "name": "museeddy",
+  "authors": [
+    "Daniel R <rowed4@students.wwu.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vexflow": "^1.2.45",
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6",
+    "react": "^15.0.2"
+  }
+}

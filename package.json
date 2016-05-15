@@ -1,0 +1,23 @@
+{
+  "name": "museeddy",
+  "version": "1.0.0",
+  "description": "* Finish bootstrapping (and altering html) * Move from restful api to websockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/drowe/museeddy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/drowe/museeddy/issues"
+  },
+  "homepage": "https://gitlab.com/drowe/museeddy#README",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1"
+  }
+}
