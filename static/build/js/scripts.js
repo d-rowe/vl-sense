@@ -42,7 +42,7 @@ $(function() {
     	var yOffset = 35;
     	var parentOffset = $(this).offset();
 	    var mouse = {
-	        'x': Math.round(((((e.pageX - parentOffset.left) - yOffset) - score.start_x) / score.notegap) + 0.2 ),
+	        'x': Math.round(((((e.pageX - parentOffset.left) - yOffset) - score.start_x) / score.notegap) - 0.3),
 	        'y': (e.pageY - parentOffset.top) - $("#scorediv").height()
 	    };
 
