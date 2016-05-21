@@ -18,6 +18,7 @@
   "homepage": "https://gitlab.com/drowe/museeddy#README",
   "devDependencies": {
     "bower": "^1.7.9",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
   }
 }
