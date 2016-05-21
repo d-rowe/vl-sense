@@ -1,4 +1,5 @@
 # MuseEddy
 
-* Finish bootstrapping (and altering html)
-* Move from restful api to websockets
+* Classify code
+* Reactify score
+* Move from restful api to websockets api (?)
