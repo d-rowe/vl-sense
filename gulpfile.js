@@ -11,7 +11,7 @@ gulp.task('runserver', function() {
 gulp.task('sass', function () {
   return gulp.src('./static/sass/*.scss')
       .pipe(sass({ errLogToConsole: true }))
-      .pipe(gulp.dest('./static/build/css'));
+      .pipe(gulp.dest('./static/css'));
 });
 
 gulp.task('watch', function () {
