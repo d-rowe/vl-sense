@@ -22,8 +22,10 @@ def convert(json):
 
 	figures = []
 	for i in rns:
-		figures.append(i.figure)
-
+		try:
+			figures.append(i.figure)
+		except:
+			pass
 
 	bass, tenor, alto, soprano = [], [], [], []
 	for x in range(len(dchords)):
